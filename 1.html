@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	
+	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<title>Страница сказачного долбаеба!</title>
+	<style>
+   body {
+    background: url(Blue.jpg); /* Цвет фона и путь к файлу */
+	background-size: cover;
+    color: rgb(115,0,255); /* Цвет текста */
+   }
+  </style>
+ </head>
+ <body>
+	
+	<a href= "2.html">
+	<center><h1>Уходите!!!</h1><center></a> 
+	<button>  Утилизировать Бендера</button><br><br>
+	<div>
+    <img id="robot" src="robot.jpg" style="height:420px; float:center; margin:5px 5px">
+	 <div id="result"></div>
+	 
+	<script>
+    $("button").click(function () {
+      $('#robot').slideUp("slow", function(){
+	  $('#result').html("кто же теперь убьет всех человеков...");
+
+    });
+	});
+ 
+
+</script>
+	
+ </body>
+</html> 
